@@ -8,7 +8,7 @@ app = Flask(__name__)
 # ОТРИМАННЯ ЗМІННОЇ API KEY
 # Для локального запуску можна просто вставити ключ сюди, 
 # але для публікації краще брати з змінних середовища.
-api_key = os.environ.get("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") 
+api_key = os.environ.get("OPENAI_API_KEY") 
 client = OpenAI(api_key=api_key)
 
 @app.route('/')
